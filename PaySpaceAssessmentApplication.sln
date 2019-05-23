@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySpaceAssessmentApplication", "PaySpaceAssessmentApplication\PaySpaceAssessmentApplication.csproj", "{70E9762A-D8B2-48B4-B803-F25F04D3DE6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySpaceAssessmentApplication.Tests", "PaySpaceAssessmentApplication.Tests\PaySpaceAssessmentApplication.Tests.csproj", "{27619C8E-9013-4225-80CE-61FB8BE80FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaySpaceAssessmentApplication.Domain", "PaySpaceAssessmentApplication.Domain\PaySpaceAssessmentApplication.Domain.csproj", "{34BAEEFB-F0A1-4463-904B-B41DE4A3CE34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70E9762A-D8B2-48B4-B803-F25F04D3DE6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E9762A-D8B2-48B4-B803-F25F04D3DE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E9762A-D8B2-48B4-B803-F25F04D3DE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E9762A-D8B2-48B4-B803-F25F04D3DE6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27619C8E-9013-4225-80CE-61FB8BE80FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27619C8E-9013-4225-80CE-61FB8BE80FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27619C8E-9013-4225-80CE-61FB8BE80FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27619C8E-9013-4225-80CE-61FB8BE80FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34BAEEFB-F0A1-4463-904B-B41DE4A3CE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BAEEFB-F0A1-4463-904B-B41DE4A3CE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34BAEEFB-F0A1-4463-904B-B41DE4A3CE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34BAEEFB-F0A1-4463-904B-B41DE4A3CE34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

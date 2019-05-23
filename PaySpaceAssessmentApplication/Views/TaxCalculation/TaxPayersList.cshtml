@@ -1,0 +1,52 @@
+﻿@model IEnumerable<PaySpaceAssessmentApplication.Models.TaxCalculationViewModel>
+
+@{
+    ViewBag.Title = "TaxPayersList";
+}
+
+<h2>TaxPayersList</h2>
+
+<p>
+    @Html.ActionLink("Tax Calculation", "Index")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PostCode)
+        </th>
+    
+        <th>
+            @Html.DisplayNameFor(model => model.TaxTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.transcationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearlySalary)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaxTotal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.transcationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearlySalary)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.taxID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.taxID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.taxID })
+        </td>*@
+    </tr>
+}
+
+</table>

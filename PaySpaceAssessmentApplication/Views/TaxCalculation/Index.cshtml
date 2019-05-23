@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div>
+    <link type="text/css" rel="Stylesheet" href="~/StyleSheet/PaySpace.css" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</div>
+
+
+@using (Html.BeginForm("CalculateTax", "TaxCalculation", FormMethod.Post))
+{
+    <id class="container">
+
+      
+        <fieldset class="style1">
+            <legend><strong>TAX CACULATIONS:</strong></legend>
+
+             <p>
+                <b>@Html.TextBox("postalCode")<input type="text" id="postalCode1" value="Postal Code"></b>
+                 @Html.ValidationMessage("postalCode", "Please enter Postal Code.", new { @class = "text-danger" })
+                 @*<asp:CustomValidator id="postalCode1" runat="server" ErrorMessage="Please Enter Text" ClientValidationFunction="ValidateSomething" ControlToValidate="postalCode" ValidateEmptyText="true"></asp:CustomValidator>*@
+            </p>
+            <p>
+                <b>@Html.TextBox("annaulSalary")<input type="text" value="Annual Salary"></b>
+                @Html.ValidationMessage("annaulSalary", "Please enter Annaul Salary.", new { @class = "text-danger" })
+            </p>
+            <p>
+                <b>@Html.DisplayText("Submit")<input type="submit" value="Submit"></b>
+            </p>
+         </fieldset>
+     </id>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/custom-validator")
+}
+}
+
